@@ -1,0 +1,24 @@
+body {
+  font-family: "Maven Pro", "Quicksand", "Manrope", "Catamaran", "Arial Narrow",
+    Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #24292e;
+  background-color: #fff;
+}
+
+div.main {
+  margin: auto;
+  width: 60%;
+}
+
+img.align-right {
+  float: right;
+  margin-left: 10px;
+}
+
+code {
+  display: block;
+  background-color: #efefef;
+  font-size: 0.75em;
+}
