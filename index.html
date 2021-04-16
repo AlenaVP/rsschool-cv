@@ -1,19 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curriculum vitae</title>
   <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Dosis:wght@300&family=Hind:wght@300&family=Inter:wght@200;300&family=Karla:wght@300&family=Lato:wght@300&family=Maven+Pro&family=Mukta:wght@300&family=Nanum+Gothic&family=Noto+Sans&family=Noto+Sans+SC:wght@300&family=Nunito+Sans:wght@300&family=Nunito:wght@200;300&family=Open+Sans:wght@300;400&family=Oxygen&family=PT+Sans&family=Poppins:wght@200&family=Prompt:wght@200&family=Quicksand&family=Roboto+Condensed:wght@300&family=Roboto+Mono:wght@200&family=Roboto:wght@100;300&family=Shippori+Mincho+B1&family=Source+Sans+Pro:wght@300;400&family=Ubuntu:wght@300&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Dosis:wght@300&family=Hind:wght@300&family=Inter:wght@200;300&family=Karla:wght@300&family=Lato:wght@300&family=Maven+Pro&family=Mukta:wght@300&family=Nanum+Gothic&family=Noto+Sans&family=Noto+Sans+SC:wght@300&family=Nunito+Sans:wght@300&family=Nunito:wght@200;300&family=Open+Sans:wght@300;400&family=Oxygen&family=PT+Sans&family=Poppins:wght@200&family=Prompt:wght@200&family=Quicksand&family=Roboto+Condensed:wght@300&family=Roboto+Mono:wght@200&family=Roboto:wght@100;300&family=Shippori+Mincho+B1&family=Source+Sans+Pro:wght@300;400&family=Ubuntu:wght@300&family=Work+Sans:wght@200&display=swap"
+    rel="stylesheet">
   <link href="css/style.css" type="text/css" rel="stylesheet">
 </head>
+
 <body>
-  <div class="main">
-    <section itemscope itemtype="https://schema.org/Person">
+  <div class="wrapper">
+    <header itemscope itemtype="https://schema.org/Person">
       <h2>Alena Papruha</h2>
-      <figure><img src="img/ava_0827_small.jpg" alt="avatar" class="align-right"></figure>
+      <figure><img src="img/ava_0827_small.jpg" alt="avatar" class="bordered align-right"></figure>
       <ul>
         <li>
           phone: <span itemprop="telephone">+375 (29) 314-03-35</span> <br>
@@ -25,67 +29,95 @@
           skype: Alena Papruha
         </li>
       </ul>
-    </section>
-    <section>
-      <h1>Full Stack Developer</h1>
-      <summary>
+      <h1>Front-end Developer</h1>
+    </header>
+    <main>
+      <p>
         Driven and self-motivated, and therefore effective at completing tasks with minimal supervision. <br>
         I able to work independently as well as functioning as an excellent team player <br>
         Ability to work with a variety of tools and desire for learning of the new tools and technologies <br>
         Aspiration towards self-development and growth <br>
-      </summary>
-    </section>
-    <section>
-      <h3>Key skills</h3>
-      <ul>
-        <li>
-          HTML5
-        </li>
-        <li>
-          CSS3
-        </li>
-        <li>
-          JavaScript
-        </li>
-        <li>
-          Java
-        </li>
-        <li>
-          Spring Framework
-        </li>
-        <li>
-          Hibernate ORM
-        </li>
-        <li>
-          PostgreSQL
-        </li>
-        <li>
-          Git
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h3>Code examples</h3>
+      </p>
+      <section>
+        <h3>Key skills</h3>
+        <ul class="grid-container">
+          <li class="grid-item">
+            HTML5
+          </li>
+          <li class="grid-item">
+            Java
+          </li>
+          <li class="grid-item">
+            CSS3
+          </li>
+          <li class="grid-item">
+            Spring Framework
+          </li>
+          <li class="grid-item">
+            JavaScript
+          </li>
+          <li class="grid-item">
+            Hibernate ORM
+          </li>
+          <li class="grid-item">
+            Git
+          </li>
+          <li class="grid-item">
+            PostgreSQL
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3>Code examples</h3>
         <pre><code>
-        function positiveSum(arr) {
-          return arr.reduce((a, b) =&gt; (b &gt; 0 ? a + b : a), 0);
-        }
-        </code></pre>
-        <hr>
-        <a href="https://github.com/AlenaVP/perform" title="GitHub repository"><h4>GitHub repository 'perform'</h4> </a>
-    </section>
-    <section>
-      <h3>Higher education</h3>
-      <p>1996 Belarusian State University, Minsk: Physics, Atomic physics and semiconductors</p>     
-    </section>
-    <section>
-      <h3>Languages</h3>
-      <p>English — B1 — Intermediate</p>
-    </section>
+          function nthFibo(n) {
+            return n &lt; 2 ? 0 : n === 2 ? 1 : nthFibo(n - 1) + nthFibo(n - 2);
+          }
+          </code></pre>
+        <h4 class="indent">My first projects</h4>
+        <div class="portfolio">
+          <div>
+            <a href="https://rolling-scopes-school.github.io/alenavp-JSFE2021Q1/wildlife/" title="the first project">
+              <img src="img/wildlife.png" alt="wildlife" class="portfolio__img">
+            </a>
+          </div>
+          <div><a href="https://rolling-scopes-school.github.io/alenavp-JSFE2021Q1/virtual-piano/"
+              title="the second project">
+              <img src="img/virtual-piano.png" alt="virtual-piano" class="portfolio__img">
+            </a>
+          </div>
+          <div>
+            <a href="https://rolling-scopes-school.github.io/alenavp-JSFE2021Q1/online-zoo/" title="the third project">
+              <img src="img/online-zoo.png" alt="online-zoo" class="portfolio__img">
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h3>Work experience</h3>
+        <p>I have over 20 years of irrelevant experience in various areas of the economy.</p>
+      </section>
+      <section>
+        <h3>Education</h3>
+        <div class="indent">
+          <h4>Additional education</h4>
+          <p>2021 RSSchool</p>
+          <h4>Higher education</h4>
+          <p>1996 Belarusian State University, Minsk: Physics, Atomic physics and semiconductors</p>
+        </div>
+      </section>
+      <section>
+        <h3>Languages</h3>
+        <p>English — B1 — Intermediate</p>
+      </section>
+    </main>
     <footer>
-      <logo><a href="https://rs.school/js/"><img src="img/rs_school_js.svg" alt="logo" class="align-left logo"></a></logo>
-      <a href="https://github.com/AlenaVP"><h5>Follow me on GitHub</h5> </a>
+      <a href="https://rs.school/js/"><img src="img/rs_school_js.svg" alt="logo" class="align-left logo"></a>
+      <a href="https://github.com/AlenaVP">
+        <h5>Follow me on GitHub</h5>
+      </a>
     </footer>
   </div>
 </body>
+
 </html>
