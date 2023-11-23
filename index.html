@@ -26,7 +26,236 @@
   </header>
 
   <main class="main">
-    <div class="wrapper"></div>
+    <div class="wrapper">
+      <div class="main-content">
+        <section id="about">
+          <h1 class="title title_first">Alena Papruha</h1>
+          <h3 class="title title_third">Full Stack Developer</h3>
+          <ul>
+            <li class="list__item">Driven and self-motivated, and therefore effective at completing tasks with minimal
+              supervision. I able to work independently as well as functioning as an excellent team player</li>
+            <li class="list__item">Ability to work with a variety of tools and desire for learning of the new tools and
+              technologies</li>
+            <li class="list__item">Aspiration towards self-development and growth</li>
+          </ul>
+        </section>
+        <section id="code">
+          <h2 class="title title_second">code example</h2>
+          <pre><code>
+  import { inject } from '@angular/core';
+  import { CanActivateFn, Router } from '@angular/router';
+
+  import TokenService from 'src/app/auth/service/token.service';
+
+  export const authGuard: CanActivateFn = () => {
+    if (!inject(TokenService).isAuthenticated()) {
+      return inject(Router).createUrlTree(['login']);
+    }
+    return true;
+  };
+          </code></pre>
+        </section>
+        <section id="portfolio">
+          <h2 class="title title_second">projects</h2>
+          <ul class="project-list">
+            <li class="list__item">
+              <a href="http://rolling-scopes-school.github.io/alenavp-JSFE2023Q1/shelter/pages/main/"
+                class="list__link">Shelter.............. [ HTML5, CSS3, JavaScript ]</a>
+            </li>
+            <li class="list__item">
+              <a href="https://rolling-scopes-school.github.io/alenavp-JSFEPRESCHOOL2022Q4/momentum/"
+                class="list__link">Momentum..... [ JavaScript ]</a>
+            </li>
+            <li class="list__item">
+              <a href="https://rolling-scopes-school.github.io/alenavp-JSFE2023Q1/rs-selectors/"
+                class="list__link">Selectors.......... [ Typecript, WebPack ]</a>
+            </li>
+            <details class="details">
+              <summary class="summary">more links</summary>
+              <li class="list__item">
+                <a href="https://rolling-scopes-school.github.io/alenavp-JSFEPRESCHOOL2022Q4/plants/"
+                  class="list__link">Plants................ [ HTML5, CSS3, JavaScript ]</a>
+              </li>
+              <li class="list__item">
+                <a href="https://rolling-scopes-school.github.io/alenavp-JSFEPRESCHOOL2023Q2/library/"
+                  class="list__link">Library.............. [ HTML5, CSS3 ]</a>
+              </li>
+              <li class="list__item">
+                <a href="https://rolling-scopes-school.github.io/alenavp-JSFEPRESCHOOL/portfolio/"
+                  class="list__link">Portfolio........... [ HTML5, CSS3 ]</a>
+              </li>
+              <li class="list__item">
+                <a href="https://rolling-scopes-school.github.io/alenavp-JSFEPRESCHOOL/eco-sounds/"
+                  class="list__link">Eco sounds...... [ JavaScript ]</a>
+              </li>
+              <li class="list__item">
+                <a href="http://rolling-scopes-school.github.io/alenavp-JSFE2021Q1/virtual-piano/"
+                  class="list__link">Virtual piano... [ JavaScript ]</a>
+              </li>
+              <li class="list__item">
+                <a href="http://rolling-scopes-school.github.io/alenavp-JSFE2021Q1/wildlife/"
+                  class="list__link">Wildlife............. [ HTML5, CSS3 ]</a>
+              </li>
+              <li class="list__item">
+                <a href="http://rolling-scopes-school.github.io/alenavp-JSFE2021Q1/online-zoo/"
+                  class="list__link">Online zoo...... [ HTML5, CSS3, JavaScript ]</a>
+              </li>
+              <li class="list__item">
+                <a href="https://rolling-scopes-school.github.io/alenavp-JSFEPRESCHOOL2022Q2/travel/"
+                  class="list__link">Travel................ [ HTML5, CSS3 ]</a>
+              </li>
+            </details>
+          </ul>
+        </section>
+        <section id="work">
+          <h2 class="title title_second">work experience</h2>
+          <section class="job-position">
+            <h3 class="title title_third">Software Engineer <span class="company-name">EPAM Systems</span></h3>
+            <h5 class="title title_five">2021 - 2023</h5>
+            <p class="stack">Tools: ServiceNow <br>
+              Technologies: JavaScript, HTML, CSS
+            </p>
+            <details class="details">
+              <summary class="summary">details</summary>
+              <ul class="job-description">
+                <li class="list__item">Implemented users, groups of users, roles, role access for users</li>
+                <li class="list__item">Implementated applications and modules with various types of fields</li>
+                <li class="list__item">Worked with business rules, client scripts, UI Policies, data policies and UI
+                  action</li>
+                <li class="list__item">Researched and implemented various ways to create reports in the Performance
+                  Analytics module of ServiceNow</li>
+                <li class="list__item">Developed and implemented Service Catalog and update Portal of ServiceNow</li>
+              </ul>
+            </details>
+          </section>
+          <section class="job-position">
+            <h3 class="title title_third">Support Engineer, Java Junior Software Developer <span
+                class="company-name">EPAM
+                Systems</span></h3>
+            <h5 class="title title_five">2019 - 2020</h5>
+            <p class="stack">Tools: Team Foundation Server, Azure DevOps Server, Fiddler, Eclipse, Error GUI, Tremor
+              GUI, Cobalt Meta Tool <br>
+              Technologies: Java, J2EE, SQL
+            </p>
+            <details class="details">
+              <summary class="summary">details</summary>
+              <ul class="job-description">
+                <li class="list__item">Analyzed, documented and performed bugs triage using different proprietary tools
+                  and bug tracking system</li>
+                <li class="list__item">Communicated with bug submitters</li>
+                <li class="list__item">Collaborated with team members</li>
+                <li class="list__item">Represented our team in bi-weekly combined planning meetings with customer</li>
+                <li class="list__item">Participating in production release activities</li>
+              </ul>
+            </details>
+          </section>
+        </section>
+        <section id="education">
+          <h2 class="title title_second">education</h2>
+          <h3 class="title title_third">additional education</h3>
+          <p>2023<br>
+            RS School<br>
+            JavaScript/Front-end (HTML, CSS, JavaScript, Git, Visual Studio Code, SCSS, Figma, Webpack, TypeScript)</p>
+          <p>2021<br>
+            ServiceNow<br>
+            ServiceNow Administration and Development</p>
+          <h3 class="title title_third">high education</h3>
+          <p>
+            1996<br>
+            Belarusian State University, Minsk:<br>
+            Physics, Atomic physics and semiconductors</p>
+        </section>
+      </div>
+      <aside class="sidebar">
+        <div class="ava">
+          <img src="#" alt="avatar" class="bordered">
+        </div>
+        <section id="contacts">
+          <h2 class="title title_second hidden">contacts</h2>
+          <ul class="contact-list">
+            <li class="list__item"><span class="contact-type">discord:</span> AlenaVP</li>
+            <li class="list__item"><span class="contact-type">e-mail:</span> papruha.pl@gmail.com</li>
+            <li class="list__item"><span class="contact-type">skype:</span> Alena Papruha</li>
+          </ul>
+        </section>
+        <section id="skills">
+          <h2 class="title title_second">key skills</h2>
+          <ul class="skill-list">
+            <li class="list__item">
+              HTML5<br>
+              <meter value="89" max="100" low="50"></meter>
+            </li>
+            <li class="list__item">
+              CSS3<br>
+              <meter value="71" max="100" low="50"></meter>
+            </li>
+            <li class="list__item">
+              JavaScript<br>
+              <meter value="62" max="100" low="50"></meter>
+            </li>
+            <li class="list__item">
+              TypeScript<br>
+              <meter value="26" max="100" low="50"></meter>
+            </li>
+            <li class="list__item">
+              Webpack<br>
+              <meter value="17" max="100" low="50"></meter>
+            </li>
+            <li class="list__item">
+              Figma<br>
+              <meter value="26" max="100" low="50"></meter>
+            </li>
+            <li class="list__item">
+              SCSS<br>
+              <meter value="35" max="100" low="50"></meter>
+            </li>
+            <li class="list__item">
+              React<br>
+              <meter value="17" max="100" low="50"></meter>
+            </li>
+            <li class="list__item">
+              Angular<br>
+              <meter value="26" max="100" low="50"></meter>
+            </li>
+            <li class="list__item">
+              Visual Studio Code<br>
+              <meter value="53" max="100" low="50"></meter>
+            </li>
+            <li class="list__item">
+              ItelliJ Idea<br>
+              <meter value="44" max="100" low="50"></meter>
+            </li>
+            <li class="list__item">
+              Java<br>
+              <meter value="35" max="100" low="50"></meter>
+            </li>
+            <li class="list__item">
+              Spring Framework<br>
+              <meter value="26" max="100" low="50"></meter>
+            </li>
+            <li class="list__item">
+              Hibernate ORM<br>
+              <meter value="17" max="100" low="50"></meter>
+            </li>
+            <li class="list__item">
+              PostgreSQL<br>
+              <meter value="35" max="100" low="50"></meter>
+            </li>
+            <li class="list__item">
+              Git<br>
+              <meter value="60" max="100" low="50"></meter>
+            </li>
+          </ul>
+        </section>
+        <section id="languages">
+          <h2 class="title title_second">languages</h2>
+          <ul class="languages-list">
+            <li class="list__item">English — B1 — Intermediate</li>
+            <li class="list__item">Polish — A1 — Elementary</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
   </main>
 
   <footer class="footer">
