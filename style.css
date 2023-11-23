@@ -113,7 +113,6 @@ ul {
 pre {
   border: none;
   border-radius: 8px;
-  font-size: 1.07em;
   font-weight: bold;
   color: #8e5c4a;
   background-color: #e3b3aa;
@@ -238,10 +237,6 @@ footer {
 }
 
 @media screen and (max-width: 960px) {
-  pre {
-    font-size: .98em;
-  }
-
   .ava::after {
     top: -5px;
     left: 20px;
