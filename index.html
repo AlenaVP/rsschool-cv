@@ -55,6 +55,22 @@
         </section>
         <section id="code" class="main-section">
           <h2 class="section-title">code example</h2>
+          <p class="code-intro">
+            Example of an Angular route guard used to protect authenticated routes
+          </p>
+          <pre><code>
+  import { inject } from '@angular/core';
+  import { CanActivateFn, Router } from '@angular/router';
+
+  import TokenService from 'src/app/auth/service/token.service';
+
+  export const authGuard: CanActivateFn = () => {
+    if (!inject(TokenService).isAuthenticated()) {
+      return inject(Router).createUrlTree(['login']);
+    }
+    return true;
+  };
+          </code></pre>
         </section>
         <section id="education" class="main-section">
           <h2 class="section-title">education</h2>
