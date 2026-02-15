@@ -14,6 +14,7 @@
   --radius-sm: 8px;
 
   --shadow-soft: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --shadow-soft-up: 0 -8px 24px rgba(15, 23, 42, 0.08);
   --shadow-hover: 0 12px 36px rgba(15, 23, 42, 0.12);
 
   --transition: 0.35s ease;
@@ -415,4 +416,40 @@ code:hover {
 
 .certificate {
   max-width: 525px;
+}
+
+/* footer */
+.footer {
+  box-shadow: var(--shadow-soft-up);
+}
+
+.footer>.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-weight: 600;
+  color: var(--text-accent);
+}
+
+.footer-link {
+  display: inline-block;
+  transition: var(--transition);
+}
+
+.footer-link:hover {
+  filter: drop-shadow(0 0 1px rgba(99, 102, 241, 0.6))
+          drop-shadow(0 0 3px rgba(139, 92, 246, 0.4));
+}
+
+.rsschool-logo {
+  width: 100px;
+  height: 37px;
+  background: url("./img/rs_school_js.svg") center no-repeat;
+}
+
+.github-logo {
+  width: 40px;
+  height: 40px;
+  background: url("./img/github.svg") center / contain;
 }
