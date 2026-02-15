@@ -401,3 +401,18 @@ code:hover {
   transform: scale(1.02);
   box-shadow: var(--shadow-hover);
 }
+
+/* education */
+.title-highlight {
+  color: var(--accent);
+}
+
+.summary {
+  font-size: 16px;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.certificate {
+  max-width: 525px;
+}
