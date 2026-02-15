@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Frontend</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/unikitty-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <nav>
+        <ul class="nav-list">
+          <li class="list__item"><a href="#contacts" class="list__link nav-list__link">contacts</a></li>
+          <li class="list__item"><a href="#skills" class="list__link nav-list__link">skills</a></li>
+          <li class="list__item"><a href="#code" class="list__link nav-list__link">code</a></li>
+          <li class="list__item"><a href="#portfolio" class="list__link nav-list__link">portfolio</a></li>
+          <li class="list__item"><a href="#education" class="list__link nav-list__link">education</a></li>
+          <li class="list__item"><a href="#languages" class="list__link nav-list__link">languages</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="wrapper">
+      <div class="main-content">
+        <section id="hero" class="main-section">
+          <div class="hero__content">
+            <h1 class="hero__title">Alena Papruha</h1>
+            <p class="hero__intro">
+              Frontend Developer with experience of building production-ready applications
+              using Angular, TypeScript, and scalable SPA architectures
+            </p>
+
+            <div class="hero__cta">
+              <a href="#portfolio" class="btn btn_primary">View Projects</a>
+              <a href="#contacts" class="btn btn_ghost">Contact Me</a>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="avatar-spinner">
+              <img src="./img/ava_0827_small.jpg" alt="avatar" class="avatar">
+              <div class="spinner-ring">
+                <img src="./img/angular_logo.png" alt="Angular logo" class="spinner-logo">
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__facts">
+            <ul class="facts-list">
+              <li>📍 EU-based (open to relocation / remote)</li>
+              <li>💼 Frontend Developer</li>
+              <li>🛠 Angular · TypeScript · RxJS</li>
+            </ul>
+          </div>
+        </section>
+        <section id="portfolio" class="main-section">
+          <h2 class="section-title">selected projects</h2>
+
+          <div class="projects">
+            <article class="project">
+              <h3>Cudo Shop</h3>
+              <p>
+                E-commerce frontend with dynamic catalog, animations, and responsive UI.
+                Improved Lighthouse performance score to 90+
+              </p>
+              <a href="https://www.youtube.com/watch?v=kiZSu4YVrcE" class="project__link">Video demo →</a>
+            </article>
+
+            <article class="project">
+              <h3>Christmas Shop</h3>
+              <p>Responsive landing page with pixel-perfect layout</p>
+              <a href="https://rolling-scopes-school.github.io/alenavp-JSFEEN2024Q4/christmas-shop"
+                class="project__link">Live demo →</a>
+            </article>
+          </div>
+        </section>
+        <section id="code" class="main-section">
+          <h2 class="section-title">code example</h2>
+          <p class="code-intro">
+            The solution of the problem <a href="https://www.codewars.com/kata/5d774cfde98179002a7cb3c8"
+              class="code__link">Make Class</a> from <a href="https://www.codewars.com/" class="code__link">Codewars</a>
+          </p>
+          <pre><code>
+  function makeClass(...properties) {
+    return class {
+      constructor(...values) {
+        properties.forEach((prop, idx) => this[prop] = values[idx]);
+      }
+    }
+  }
+          </code></pre>
+        </section>
+        <section id="education" class="main-section">
+          <h2 class="section-title">education</h2>
+
+          <h3 class="section-subtitle">additional education</h3>
+          <ul>
+            <li class="education__item">
+              <h4>JavaScript / Front-end <span class="title-highlight">RS School</span></h4>
+              <p>(HTML, CSS, JavaScript, Git, Visual Studio Code, SCSS, Figma, Webpack, TypeScript)</p>
+              <p>2025 | Poland, online</p>
+              <details>
+                <summary class="summary">(the certificate is under the cut)</summary>
+                <img src="./img/JS-FE-2025.jpg" alt="JS/FE certificate" class="certificate">
+              </details>
+            </li>
+            <li class="education__item">
+              <h4>Angular <span class="title-highlight">RS School</span></h4>
+              <p>(RxJS, NgRx, Signals, Material-UI, Git, Visual Studio Code)</p>
+              <p>2024 | Poland, online</p>
+            </li>
+          </ul>
+          <hr>
+          <h3 class="section-subtitle">high education</h3>
+          <div class="education__item">
+            <h3 class="title-highlight">Belarus State University</h3>
+            <p>Physics, Atomic physics and semiconductors</p>
+          </div>
+        </section>
+        <section id="languages" class="main-section">
+          <h2 class="section-title">languages</h2>
+          <ul class="languages-list">
+            <li class="list__item">English — Upper-Intermediate (B2)</li>
+            <li class="list__item">Polish — Intermediate (B1)</li>
+          </ul>
+        </section>
+      </div>
+      <aside class="sidebar">
+        <section id="contacts" class="sidebar-section">
+          <h2 class="section-title">contacts</h2>
+          <ul class="contact-list">
+            <li class="list__item">📧 poprugo@gmail.com</li>
+            <li class="list__item">💼 discord.com: AlenaVP</li>
+            <li class="list__item">💻 github.com/AlenaVP</li>
+          </ul>
+        </section>
+        <section id="skills" class="sidebar-section">
+          <h2 class="section-title">key skills</h2>
+
+          <ul class="skill-list">
+            <li class="list__item">Angular</li>
+            <li class="list__item">TypeScript</li>
+            <li class="list__item">RxJS</li>
+            <li class="list__item">REST APIs</li>
+            <li class="list__item">Responsive design</li>
+            <li class="list__item">CSS animations</li>
+            <li class="list__item">Scrum</li>
+            <li class="list__item">Git</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="rss">
+        <a href="https://rs.school/courses/short-track" class="footer-link rsschool-logo" aria-label="rss"></a>
+      </div>
+      <div class="year">
+        <time datetime="2026-02-14 23:30">2026</time>
+      </div>
+      <div class="github">
+        <a href="https://github.com/AlenaVP" class="footer-link github-logo" aria-label="github"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
