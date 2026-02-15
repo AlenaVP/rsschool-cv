@@ -119,6 +119,16 @@ hr {
   }
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(45deg);
+  }
+
+  to {
+    transform: rotate(-315deg);
+  }
+}
+
 /* header */
 .header {
   position: sticky;
@@ -251,18 +261,60 @@ section:hover {
   line-height: 1.1;
 }
 
-.hero__intro   {
+.hero__intro {
   font-size: 1.2rem;
   margin: 20px 0 32px;
   color: var(--text-accent);
 }
 
-.hero__visual img {
+.hero__visual {
   grid-area: visual;
-  width: 100%;
-  max-width: 260px;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar-spinner {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  width: 210px;
+  height: 210px;
   border-radius: 50%;
+  object-fit: cover;
   box-shadow: var(--shadow-hover);
+}
+
+.spinner-ring {
+  position: absolute;
+  inset: -12px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  border-right: 3px solid var(--accent);
+  border-bottom: 3px solid var(--accent);
+  border-left: 3px solid var(--accent);
+  transform: rotate(45deg);
+  animation: rotate 2s linear 1s;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  filter: drop-shadow(0 0 1px rgba(99, 102, 241, 0.6))
+          drop-shadow(0 0 3px rgba(139, 92, 246, 0.4));
+}
+
+.spinner-logo {
+  position: absolute;
+  width: 53px;
+  top: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  padding: 6px;
 }
 
 .hero__facts {
