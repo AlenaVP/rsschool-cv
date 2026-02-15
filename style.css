@@ -410,7 +410,7 @@ code:hover {
 }
 
 .summary {
-  font-size: 16px;
+  font-size: 1rem;
   font-style: italic;
   cursor: pointer;
 }
@@ -453,4 +453,126 @@ code:hover {
   width: 40px;
   height: 40px;
   background: url("./img/github.svg") center / contain;
+}
+
+/* rwd */
+@media screen and (max-width: 1200px) {
+  .hero__facts li {
+    white-space: wrap;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+
+  .nav-list__link {
+    padding: 14px 12px;
+  }
+
+  .sidebar,
+  .main-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero__cta {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 8px;
+  }
+
+  .hero__cta>.btn {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .main>.wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-list__link {
+    padding: 14px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+
+  section {
+    padding: 18px;
+  }
+
+  .avatar-spinner {
+    width: 180px;
+    height: 180px;
+  }
+
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  .spinner-logo {
+    width: 44px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-list {
+    flex-wrap: wrap;
+  }
+
+  #hero {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "content"
+        "visual"
+        "facts";
+    padding: 18px;
+  }
+
+  .facts-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__facts li {
+    white-space: nowrap;
+  }
+
+  .hero__cta {
+    justify-items: center;
+  }
+
+  code {
+    max-width: 70vw;
+  }
+}
+
+@media (max-width: 540px) {
+  .avatar-spinner {
+    width: 150px;
+    height: 150px;
+  }
+
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  .spinner-logo {
+    width: 35px;
+  }
+
+  code {
+    max-width: 50vw;
+  }
 }
