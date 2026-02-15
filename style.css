@@ -360,3 +360,33 @@ section:hover {
   background: var(--accent);
   color: var(--bg-card);
 }
+
+/* projects */
+.projects {
+  display: grid;
+  gap: 24px;
+}
+
+.project {
+  padding: 24px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg,
+      var(--bg-main),
+      var(--bg-accent));
+  transition: var(--transition);
+}
+
+.project:hover {
+  transform: scale(1.02);
+}
+
+.project__link,
+.code__link {
+  color: var(--accent);
+  transition: var(--transition);
+}
+
+.project__link:hover,
+.code__link:hover {
+  text-shadow: 1px 2px 5px rgba(99, 102, 241, 0.6);
+}
