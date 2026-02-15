@@ -136,6 +136,7 @@ hr {
   top: 0;
   background-color: var(--bg-main);
   z-index: 1000;
+  box-shadow: var(--shadow-soft);
 }
 
 .header>.wrapper {
@@ -159,14 +160,14 @@ hr {
 
 .nav-list__link {
   position: relative;
-  padding: 14px 14px;
+  padding: 16px 14px;
 }
 
 .nav-list__link::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 6px;
+  bottom: 10px;
   width: 100%;
   height: 2px;
   background: var(--accent);
