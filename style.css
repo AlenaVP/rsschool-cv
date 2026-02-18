@@ -406,3 +406,18 @@ code.hljs {
   border-radius: var(--radius);
   background: var(--bg-card-gradient);
 }
+
+/* education */
+.title-highlight {
+  color: var(--accent);
+}
+
+.summary {
+  font-size: 1rem;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.certificate {
+  max-width: 525px;
+}
