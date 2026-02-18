@@ -238,6 +238,11 @@ section:hover {
   border-radius: 2px;
 }
 
+.card {
+  background: var(--bg-card-gradient);
+  border-radius: var(--radius);
+}
+
 /* hero */
 #hero {
   display: grid;
@@ -248,10 +253,6 @@ section:hover {
   gap: 35px;
   align-items: center;
   padding: 53px;
-  background: linear-gradient(135deg,
-      var(--bg-card),
-      var(--bg-accent));
-  border-radius: var(--radius);
 }
 
 #hero>div {
@@ -372,10 +373,6 @@ section:hover {
 
 .project {
   padding: 24px;
-  border-radius: var(--radius);
-  background: linear-gradient(135deg,
-      var(--bg-main),
-      var(--bg-accent));
   transition: var(--transition);
 }
 
