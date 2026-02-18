@@ -380,9 +380,12 @@ section:hover {
   transform: scale(1.02);
 }
 
+.project__link {
+  padding-right: 35px;
+}
+
 .project__link,
 .code__link {
-  padding-right: 35px;
   color: var(--accent);
   transition: var(--transition);
 }
@@ -420,4 +423,39 @@ code.hljs {
 
 .certificate {
   max-width: 525px;
+}
+
+/* footer */
+.footer {
+  box-shadow: var(--shadow-soft-up);
+}
+
+.footer>.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-weight: 600;
+  color: var(--text-accent);
+}
+
+.footer-link {
+  display: inline-block;
+  transition: var(--transition);
+}
+
+.footer-link:hover {
+  filter: drop-shadow(0 0 1px rgba(99, 102, 241, 0.6)) drop-shadow(0 0 3px rgba(139, 92, 246, 0.4));
+}
+
+.rsschool-logo {
+  width: 100px;
+  height: 37px;
+  background: url("./img/rs_school_js.svg") center no-repeat;
+}
+
+.github-logo {
+  width: 40px;
+  height: 40px;
+  background: url("./img/github.svg") center / contain;
 }
