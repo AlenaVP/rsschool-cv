@@ -11,6 +11,8 @@
 
   --accent: #6366f1;
   /* indigo-500 */
+  --link: #4f46e5;
+  /* indigo-600 */
 
   --radius: 14px;
   --radius-sm: 8px;
@@ -212,7 +214,6 @@ section {
 }
 
 section:hover {
-  transform: translateY(-3px);
   box-shadow: var(--shadow-hover);
 }
 
@@ -241,6 +242,13 @@ section:hover {
 .card {
   background: var(--bg-card-gradient);
   border-radius: var(--radius);
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  vertical-align: bottom;
+  flex-shrink: 0;
 }
 
 /* hero */
@@ -334,6 +342,10 @@ section:hover {
 }
 
 .hero__facts li {
+  text-align: center;
+}
+
+.hero__facts li:not(:first-child) {
   white-space: nowrap;
 }
 
@@ -386,7 +398,7 @@ section:hover {
 
 .project__link,
 .code__link {
-  color: var(--accent);
+  color: var(--link);
   transition: var(--transition);
 }
 
@@ -462,7 +474,7 @@ code.hljs {
 
 /* rwd */
 @media screen and (max-width: 1200px) {
-  .hero__facts li {
+  .hero__facts li:not(:first-child) {
     white-space: wrap;
   }
 }
@@ -557,7 +569,7 @@ code.hljs {
     align-items: center;
   }
 
-  .hero__facts li {
+  .hero__facts li:not(:first-child) {
     white-space: nowrap;
   }
 
@@ -588,5 +600,16 @@ code.hljs {
   .project__cta {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
