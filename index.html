@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Frontend</title>
+  <link rel="shortcut icon" href="./img/angular.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/unikitty-light.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <nav>
+        <ul class="nav-list">
+          <li class="list__item"><a href="#contacts" class="list__link nav-list__link">contacts</a></li>
+          <li class="list__item"><a href="#skills" class="list__link nav-list__link">skills</a></li>
+          <li class="list__item"><a href="#experience" class="list__link nav-list__link">work experience</a></li>
+          <li class="list__item"><a href="#code" class="list__link nav-list__link">code</a></li>
+          <li class="list__item"><a href="#portfolio" class="list__link nav-list__link">portfolio</a></li>
+          <li class="list__item"><a href="#education" class="list__link nav-list__link">education</a></li>
+          <li class="list__item"><a href="#languages" class="list__link nav-list__link">languages</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="wrapper">
+      <div class="main-content">
+        <section id="hero" class="main-section card">
+          <div class="hero__content">
+            <h1 class="hero__title">Alena Papruha</h1>
+            <p class="hero__intro">
+              Frontend Developer based in Krakow, Poland, with professional experience across enterprise software
+              development (Java, ServiceNow) and modern web applications built with Angular, TypeScript and RxJS.
+              Comfortable working across the stack — hands-on with Node.js/NestJS and PostgreSQL through recent
+              full-stack projects — and focused on delivering responsive, production-ready UIs in Agile teams.
+            </p>
+
+            <div class="hero__cta">
+              <a href="#portfolio" class="btn btn_primary">View Projects</a>
+              <a href="#contacts" class="btn btn_ghost">Contact Me</a>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="avatar-spinner">
+              <img src="./img/ava_0827_small.jpg" alt="avatar" class="avatar">
+              <div class="spinner-ring">
+                <img src="./img/angular_logo.png" alt="Angular logo" class="spinner-logo">
+              </div>
+            </div>
+          </div>
+
+          <ul class="hero__facts">
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Krakow, Poland (open to relocation / remote)
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+              </svg>
+              Frontend Developer
+            </li>
+            <li>
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+              </svg>
+              Angular · TypeScript · RxJS
+            </li>
+          </ul>
+        </section>
+
+        <section id="experience" class="main-section">
+          <h2 class="section-title">work experience</h2>
+          <ul>
+            <li class="experience__item">
+              <h3>Frontend Angular Developer <span class="title-highlight">Andersen People</span></h3>
+              <p>2024 | Krakow, Poland</p>
+              <ul>
+                <li>Developed and maintained responsive UI components using Angular and TypeScript</li>
+                <li>Collaborated with backend engineers and designers to deliver features end-to-end, as part of a
+                  3-developer frontend team (plus team lead) within a ~15-person cross-functional project (PM, BA, QA,
+                  FE, BE, DevOps)</li>
+                <li>Participated in code reviews and Agile/Scrum ceremonies</li>
+              </ul>
+            </li>
+            <li class="experience__item">
+              <h3>ServiceNow Developer <span class="title-highlight">EPAM Systems</span></h3>
+              <p>2021 – 2023 | Minsk, Belarus &amp; Krakow, Poland</p>
+              <ul>
+                <li>Designed and implemented custom applications, workflows and forms on the ServiceNow platform using
+                  JavaScript and the Glide API</li>
+                <li>Built integrations between ServiceNow and third-party systems via REST/SOAP APIs</li>
+                <li>Worked within a 5-developer Agile team (plus QA and team lead/PM); relocated from Minsk to Krakow in
+                  2022 as part of the project</li>
+              </ul>
+            </li>
+            <li class="experience__item">
+              <h3>Junior Java Developer &amp; Support Analyst <span class="title-highlight">EPAM Systems</span></h3>
+              <p>2019 — 2020 | Minsk, Belarus</p>
+              <ul>
+                <li>Maintained Java-based application components across two Agile delivery teams (~8 and ~4 people)</li>
+                <li>Provided application support, investigating and resolving dozens of production issues via the
+                  bug-tracking system</li>
+                <li>Participated in Agile/Scrum ceremonies</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section id="portfolio" class="main-section">
+          <h2 class="section-title">selected projects</h2>
+
+          <div class="projects">
+            <article class="project card">
+              <h3>InjecTune</h3>
+              <p>
+                Full-stack music streaming app built by a 3-person development team (pull requests, code review):
+                Angular 21 (standalone components, Signals) frontend consuming the Jamendo API, with a custom
+                NestJS + PostgreSQL (Supabase) backend for playlists and favorites. Lighthouse Timespan Performance
+                18/18 and Best Practices 8/8.
+              </p>
+              <p>
+                Additionally coordinated the team as Scrum Master: facilitated Agile ceremonies, prepared sprint
+                summaries, and set up the project's Kanban board. Used AI-assisted code generation (Copilot) for
+                one feature implementation.
+              </p>
+              <div class="project__cta">
+                <a href="https://rs-champions.github.io/InjecTune/" class="project__link">Live demo →</a>
+                <a href="https://github.com/RS-Champions/InjecTune" class="project__link">Frontend repo →</a>
+                <a href="https://github.com/RS-Champions/InjecTune-backend" class="project__link">Backend repo →</a>
+              </div>
+            </article>
+
+            <article class="project card">
+              <h3>Cudo Shop</h3>
+              <p>
+                E-commerce frontend with dynamic catalog, animations, and responsive UI.
+                Improved Lighthouse performance score to 90+
+              </p>
+              <div class="project__cta">
+                <a href="https://www.youtube.com/watch?v=kiZSu4YVrcE" class="project__link">Video demo →</a>
+                <a href="https://github.com/IevgeniiaAbdulina/cudo-shop/wiki" class="project__link">Github project →</a>
+              </div>
+            </article>
+
+            <article class="project card">
+              <h3>Christmas Shop</h3>
+              <p>Responsive landing page with pixel-perfect layout</p>
+              <a href="https://rolling-scopes-school.github.io/alenavp-JSFEEN2024Q4/christmas-shop"
+                class="project__link">Live demo →</a>
+            </article>
+          </div>
+        </section>
+
+        <section id="code" class="main-section">
+          <h2 class="section-title">code example</h2>
+          <p class="code__intro">
+            The solution of the problem <a href="https://www.codewars.com/kata/5d774cfde98179002a7cb3c8"
+              class="code__link">Make Class</a> from <a href="https://www.codewars.com/" class="code__link">Codewars</a>
+          </p>
+          <pre><code>
+  function makeClass(...properties) {
+    return class {
+      constructor(...values) {
+        properties.forEach((prop, idx) => this[prop] = values[idx]);
+      }
+    }
+  }
+          </code></pre>
+        </section>
+
+        <section id="education" class="main-section">
+          <h2 class="section-title">education</h2>
+
+          <h3 class="section-subtitle">additional education</h3>
+          <ul>
+            <li class="education__item">
+              <h4>Angular <span class="title-highlight">RS School</span></h4>
+              <p>(RxJS, NgRx, Signals, Taiga UI, Git, Visual Studio Code)</p>
+              <p>2026 | Poland, online</p>
+              <details>
+                <summary class="summary">(the certificate is under the cut)</summary>
+                <img src="./img/angular-2026.jpg" alt="Angular certificate" class="certificate">
+              </details>
+            </li>
+            <li class="education__item">
+              <h4>JavaScript / Front-end <span class="title-highlight">RS School</span></h4>
+              <p>(HTML, CSS, JavaScript, Git, Visual Studio Code, SCSS, Figma, Webpack, TypeScript)</p>
+              <p>2025 | Poland, online</p>
+              <details>
+                <summary class="summary">(the certificate is under the cut)</summary>
+                <img src="./img/JS-FE-2025.jpg" alt="JS/FE certificate" class="certificate">
+              </details>
+            </li>
+          </ul>
+          <hr>
+          <h3 class="section-subtitle">high education</h3>
+          <div class="education__item">
+            <h3 class="title-highlight">Belarus State University</h3>
+            <p>Physics, Atomic physics and semiconductors</p>
+          </div>
+        </section>
+
+        <section id="languages" class="main-section">
+          <h2 class="section-title">languages</h2>
+          <ul class="languages-list">
+            <li class="list__item">English — Upper-Intermediate (B2)</li>
+            <li class="list__item">Polish — Intermediate (B1)</li>
+          </ul>
+        </section>
+      </div>
+
+      <aside class="sidebar">
+        <section id="contacts" class="sidebar-section">
+          <h2 class="section-title">contacts</h2>
+          <ul class="contact-list">
+            <li class="list__item">
+              <a href="mailto:mymail@gmail.com" class="list__link">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2" />
+                  <path d="m22 6-10 7L2 6" />
+                </svg>
+                poprugo@gmail.com
+              </a>
+            </li>
+            <li class="list__item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
+              discord.com: AlenaVP(@AlenaVP)
+            </li>
+            <li class="list__item">
+              <a href="https://github.com/mygithub" class="list__link">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+                github.com/AlenaVP
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section id="skills" class="sidebar-section">
+          <h2 class="section-title">key skills</h2>
+          <h3 class="section-subtitle">core</h3>
+          <ul class="skill-list">
+            <li class="list__item">Angular</li>
+            <li class="list__item">TypeScript</li>
+            <li class="list__item">RxJS</li>
+            <li class="list__item">Signals</li>
+            <li class="list__item">REST APIs</li>
+            <li class="list__item">Responsive design</li>
+            <li class="list__item">CSS animations</li>
+            <li class="list__item">Git</li>
+            <li class="list__item">Scrum</li>
+          </ul>
+          <h3 class="section-subtitle">working knowledge</h3>
+          <ul class="skill-list">
+            <li class="list__item">Node.js / NestJS</li>
+            <li class="list__item">NgRx</li>
+            <li class="list__item">Java</li>
+            <li class="list__item">PostgreSQL / SQL</li>
+            <li class="list__item">Jest</li>
+            <li class="list__item">Jasmine / Karma</li>
+            <li class="list__item">Docker</li>
+            <li class="list__item">Cloud fundamentals</li>
+            <li class="list__item">Taiga UI / Material-UI / Bootstrap 5</li>
+            <li class="list__item">AI-assisted development (Claude, Copilot, ChatGPT)</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="rss">
+        <a href="https://rs.school/courses/short-track" class="footer-link rsschool-logo" aria-label="rss"></a>
+      </div>
+      <div class="year">
+        <time datetime="2026-09-14 23:30">2026</time>
+      </div>
+      <div class="github">
+        <a href="https://github.com/AlenaVP" class="footer-link github-logo" aria-label="github"></a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
