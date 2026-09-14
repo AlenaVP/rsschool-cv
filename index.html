@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV Frontend</title>
-  <link rel="shortcut icon" href="img/angular.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/angular.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/base16/unikitty-light.min.css">
@@ -20,6 +20,7 @@
         <ul class="nav-list">
           <li class="list__item"><a href="#contacts" class="list__link nav-list__link">contacts</a></li>
           <li class="list__item"><a href="#skills" class="list__link nav-list__link">skills</a></li>
+          <li class="list__item"><a href="#experience" class="list__link nav-list__link">work experience</a></li>
           <li class="list__item"><a href="#code" class="list__link nav-list__link">code</a></li>
           <li class="list__item"><a href="#portfolio" class="list__link nav-list__link">portfolio</a></li>
           <li class="list__item"><a href="#education" class="list__link nav-list__link">education</a></li>
@@ -36,8 +37,10 @@
           <div class="hero__content">
             <h1 class="hero__title">Alena Papruha</h1>
             <p class="hero__intro">
-              Frontend Developer with experience of building production-ready applications
-              using Angular, TypeScript, and scalable SPA architectures
+              Frontend Developer based in Krakow, Poland, with professional experience across enterprise software
+              development (Java, ServiceNow) and modern web applications built with Angular, TypeScript and RxJS.
+              Comfortable working across the stack — hands-on with Node.js/NestJS and PostgreSQL through recent
+              full-stack projects — and focused on delivering responsive, production-ready UIs in Agile teams.
             </p>
 
             <div class="hero__cta">
@@ -56,15 +59,74 @@
           </div>
 
           <ul class="hero__facts">
-            <li>📍 EU-based (open to relocation / remote)</li>
+            <li>📍 Krakow, Poland (open to relocation / remote)</li>
             <li>💼 Frontend Developer</li>
             <li>🛠 Angular · TypeScript · RxJS</li>
           </ul>
         </section>
+
+        <section id="experience" class="main-section">
+          <h2 class="section-title">work experience</h2>
+          <ul>
+            <li class="experience__item">
+              <h3>Frontend Angular Developer <span class="title-highlight">Andersen People</span></h3>
+              <p>2024 | Krakow, Poland</p>
+              <ul>
+                <li>Developed and maintained responsive UI components using Angular and TypeScript</li>
+                <li>Collaborated with backend engineers and designers to deliver features end-to-end, as part of a
+                  3-developer frontend team (plus team lead) within a ~15-person cross-functional project (PM, BA, QA,
+                  FE, BE, DevOps)</li>
+                <li>Participated in code reviews and Agile/Scrum ceremonies</li>
+              </ul>
+            </li>
+            <li class="experience__item">
+              <h3>ServiceNow Developer <span class="title-highlight">EPAM Systems</span></h3>
+              <p>2021 – 2023 | Minsk, Belarus &amp; Krakow, Poland</p>
+              <ul>
+                <li>Designed and implemented custom applications, workflows and forms on the ServiceNow platform using
+                  JavaScript and the Glide API</li>
+                <li>Built integrations between ServiceNow and third-party systems via REST/SOAP APIs</li>
+                <li>Worked within a 5-developer Agile team (plus QA and team lead/PM); relocated from Minsk to Krakow in
+                  2022 as part of the project</li>
+              </ul>
+            </li>
+            <li class="experience__item">
+              <h3>Junior Java Developer &amp; Support Analyst <span class="title-highlight">EPAM Systems</span></h3>
+              <p>2019 — 2020 | Minsk, Belarus</p>
+              <ul>
+                <li>Maintained Java-based application components across two Agile delivery teams (~8 and ~4 people)</li>
+                <li>Provided application support, investigating and resolving dozens of production issues via the
+                  bug-tracking system</li>
+                <li>Participated in Agile/Scrum ceremonies</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
         <section id="portfolio" class="main-section">
           <h2 class="section-title">selected projects</h2>
 
           <div class="projects">
+            <article class="project card">
+              <h3>InjecTune</h3>
+              <p>
+                Full-stack music streaming app built by a 3-person development team (pull requests, code review):
+                Angular 21 (standalone components, Signals) frontend consuming the Jamendo API, with a custom
+                NestJS + PostgreSQL (Supabase) backend for playlists and favorites. Lighthouse Timespan Performance
+                18/18 and Best Practices 8/8.
+              </p>
+              <p>
+                Additionally coordinated the team as Scrum Master: facilitated Agile ceremonies, prepared sprint
+                summaries, and set up the project's Kanban board. Used AI-assisted code generation (Copilot) for
+                one feature implementation.
+              </p>
+              <div class="project__cta">
+                <a href="https://rs-champions.github.io/InjecTune/" class="project__link">Live demo →</a>
+                <a href="https://github.com/RS-Champions/InjecTune" class="project__link">Frontend repo →</a>
+                <a href="https://github.com/RS-Champions/InjecTune-backend" class="project__link">Backend repo →</a>
+              </div>
+            </article>
+
             <article class="project card">
               <h3>Cudo Shop</h3>
               <p>
@@ -85,6 +147,7 @@
             </article>
           </div>
         </section>
+
         <section id="code" class="main-section">
           <h2 class="section-title">code example</h2>
           <p class="code__intro">
@@ -101,11 +164,21 @@
   }
           </code></pre>
         </section>
+
         <section id="education" class="main-section">
           <h2 class="section-title">education</h2>
 
           <h3 class="section-subtitle">additional education</h3>
           <ul>
+            <li class="education__item">
+              <h4>Angular <span class="title-highlight">RS School</span></h4>
+              <p>(RxJS, NgRx, Signals, Taiga UI, Git, Visual Studio Code)</p>
+              <p>2026 | Poland, online</p>
+              <details>
+                <summary class="summary">(the certificate is under the cut)</summary>
+                <img src="./img/angular-2026.jpg" alt="Angular certificate" class="certificate">
+              </details>
+            </li>
             <li class="education__item">
               <h4>JavaScript / Front-end <span class="title-highlight">RS School</span></h4>
               <p>(HTML, CSS, JavaScript, Git, Visual Studio Code, SCSS, Figma, Webpack, TypeScript)</p>
@@ -115,11 +188,6 @@
                 <img src="./img/JS-FE-2025.jpg" alt="JS/FE certificate" class="certificate">
               </details>
             </li>
-            <li class="education__item">
-              <h4>Angular <span class="title-highlight">RS School</span></h4>
-              <p>(RxJS, NgRx, Signals, Material-UI, Git, Visual Studio Code)</p>
-              <p>2024 | Poland, online</p>
-            </li>
           </ul>
           <hr>
           <h3 class="section-subtitle">high education</h3>
@@ -128,6 +196,7 @@
             <p>Physics, Atomic physics and semiconductors</p>
           </div>
         </section>
+
         <section id="languages" class="main-section">
           <h2 class="section-title">languages</h2>
           <ul class="languages-list">
@@ -136,27 +205,43 @@
           </ul>
         </section>
       </div>
+
       <aside class="sidebar">
         <section id="contacts" class="sidebar-section">
           <h2 class="section-title">contacts</h2>
           <ul class="contact-list">
             <li class="list__item">📧 poprugo@gmail.com</li>
-            <li class="list__item">💼 discord.com: AlenaVP</li>
+            <li class="list__item">💼 discord.com: AlenaVP(@AlenaVP)</li>
             <li class="list__item">💻 github.com/AlenaVP</li>
           </ul>
         </section>
+
         <section id="skills" class="sidebar-section">
           <h2 class="section-title">key skills</h2>
-
+          <h3 class="section-subtitle">core</h3>
           <ul class="skill-list">
             <li class="list__item">Angular</li>
             <li class="list__item">TypeScript</li>
             <li class="list__item">RxJS</li>
+            <li class="list__item">Signals</li>
             <li class="list__item">REST APIs</li>
             <li class="list__item">Responsive design</li>
             <li class="list__item">CSS animations</li>
-            <li class="list__item">Scrum</li>
             <li class="list__item">Git</li>
+            <li class="list__item">Scrum</li>
+          </ul>
+          <h3 class="section-subtitle">working knowledge</h3>
+          <ul class="skill-list">
+            <li class="list__item">Node.js / NestJS</li>
+            <li class="list__item">NgRx</li>
+            <li class="list__item">Java</li>
+            <li class="list__item">PostgreSQL / SQL</li>
+            <li class="list__item">Jest</li>
+            <li class="list__item">Jasmine / Karma</li>
+            <li class="list__item">Docker</li>
+            <li class="list__item">Cloud fundamentals</li>
+            <li class="list__item">Taiga UI / Material-UI / Bootstrap 5</li>
+            <li class="list__item">AI-assisted development (Claude, Copilot, ChatGPT)</li>
           </ul>
         </section>
       </aside>
@@ -169,7 +254,7 @@
         <a href="https://rs.school/courses/short-track" class="footer-link rsschool-logo" aria-label="rss"></a>
       </div>
       <div class="year">
-        <time datetime="2026-02-14 23:30">2026</time>
+        <time datetime="2026-09-14 23:30">2026</time>
       </div>
       <div class="github">
         <a href="https://github.com/AlenaVP" class="footer-link github-logo" aria-label="github"></a>
